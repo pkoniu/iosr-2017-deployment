@@ -1,6 +1,7 @@
 #!/bin/sh
 set -e
 
+pwd
 sh ${DEPLOYMENT_SCRIPTS_PATH}/dockerhub/build.sh
 sh ${DEPLOYMENT_SCRIPTS_PATH}/dockerhub/push.sh
 npm run infra
